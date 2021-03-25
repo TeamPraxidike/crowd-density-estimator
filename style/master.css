@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+
+
+body {
+    background-color: #fdfffc;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #14213d;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    padding: 17px 16px;
+    text-decoration: none;
+    color: #fff1e6;
+    font-size: medium;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background-image: url("https://nypost.com/wp-content/uploads/sites/2/2020/02/istock-1047229538.jpg?quality=80&strip=all");
+}
+
+header h1 {
+    width: 1012px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-weight: lighter;
+    background-color: #e5e5e5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#karta { 
+    height: 512px; 
+    width: 1012px;
+}
