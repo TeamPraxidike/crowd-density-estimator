@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
 
-
 body {
     background-color: #fdfffc;
     margin: 0;
@@ -27,7 +26,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    background-image: url("https://nypost.com/wp-content/uploads/sites/2/2020/02/istock-1047229538.jpg?quality=80&strip=all");
+    background-color: #e5e5e5;
 }
 
 header h1 {
@@ -40,7 +39,43 @@ header h1 {
     font-family: 'Montserrat', sans-serif;
 }
 
+article {
+    display: flex;
+    margin: 0% 25%;
+    padding: 10px;
+    flex-flow: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-size: 2em;
+    font-weight: lighter;
+    font-family:'Times New Roman', Times, serif;
+    color:#a1a0a3;
+}
+
+section {
+    margin: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 20%;
+    text-align: justify;
+}
+
+footer {
+    background-color: #14213d;
+    color: hsl(60, 8%, 81%);
+    
+}
+
+footer p {
+    text-align: center;
+    padding-top: 20px;
+    margin: 0px;
+}
+
 #karta { 
-    height: 512px; 
+    height: 712px; 
     width: 1012px;
 }
