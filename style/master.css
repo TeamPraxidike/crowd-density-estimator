@@ -85,6 +85,15 @@ footer p {
     text-align: center;
 }
 
+.accuracy_tables {
+    width: 500px;
+    margin: 0% 5%;
+}
+
+#accuracy_article {
+    margin: 0% 5%;
+}
+
 #article2 section{
     margin: 0% 2%;
 }
@@ -102,6 +111,7 @@ footer p {
 #team_photo {
     width: 100%;
     min-width: 300px;
+    border: 5px solid #14213d;
 }
 
 
@@ -120,6 +130,9 @@ footer p {
     nav img {
         margin-top: 10px;
         height: 30px !important;
+    }
+    .accuracy_tables {
+        width: 400px;
     }
   }
   
