@@ -30,7 +30,7 @@ header {
 }
 
 header h1 {
-    width: 1012px;
+    width: 100%;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -41,13 +41,13 @@ header h1 {
 
 article {
     display: flex;
-    margin: 0% 25%;
+    margin: 0% 15%;
     padding: 10px;
     flex-flow: row;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: lighter;
     font-family:'Times New Roman', Times, serif;
     color:#a1a0a3;
@@ -59,7 +59,7 @@ section {
     flex-flow: column;
     align-items: center;
     flex-grow: 1;
-    flex-basis: 20%;
+    flex-basis: 30%;
     text-align: justify;
 }
 
@@ -75,7 +75,51 @@ footer p {
     margin: 0px;
 }
 
+.article_heading {
+    color: #a1a199;
+    font-weight: lighter;
+    font-size: 50px;
+    font-family:serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+#article2 section{
+    margin: 0% 2%;
+}
+
+#article2 section p {
+    margin: 0;
+    padding: 0;
+}
+
 #karta { 
     height: 712px; 
-    width: 1012px;
+    width: 100%;
 }
+
+#team_photo {
+    width: 100%;
+    min-width: 300px;
+}
+
+
+/* Queries */
+@media only screen and (max-width: 600px) {
+    #karta {
+        width: 100%;
+        height: 50vh;
+    }
+    header h1 {
+        width: 100%;
+    }
+    #article1_heading{
+        font-size: 40px;
+    }
+    nav img {
+        margin-top: 10px;
+        height: 30px !important;
+    }
+  }
+  

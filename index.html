@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
     <!-- metas -->
     <meta charset="UTF-8">
@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- links -->
     <link rel="stylesheet" href="./style/master.css">
+    <link rel="icon" href="./images/paxlogo.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
     crossorigin=""/>
@@ -15,38 +16,50 @@
     crossorigin=""></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
     <!-- title -->
-    <title>Praxidike</title>
+    <title>Праксидика</title>
 </head>
 <body>
     <nav>
-        <a href="">Praxidike</a>
+        <img src="https://cdn.discordapp.com/attachments/824642058656153600/825036007741194240/PRAX_LOGO.png" alt="лого" style="float: left; height: 50px;">
+        <a href="">Заглавна страница</a>
+        <a href="./pages/model.html">Модел</a>
     </nav>
     <main>
         <header>
-            <h1>Praxidike</h1>
             <div id="karta"></div>
         </header>
         <hr style="opacity: 0.4;">
         <br>
-        <br>
+        <br>        
+        <h1 class="article_heading">Информация за back-end-а на приложението.</h1>
         <article>
             <section>
                 <img src="./images/leafleatlogosmall.png" alt="">
-                <p>Leaflet is the leading open-source JavaScript library for mobile-friendly interactive maps.</p>
+                <p>Leaflet е водеща open-source JavaScript библиотека за карти достъпни и за телефон. Ние имплементираме картата в заглавната страница (тази). Върху картата има няколко сектора, които при натискане показват актуална информация за локацията и броя на хората в нея.</p>
             </section>
             <section>
                 <img src="./images/pythonsmall.png" alt="">
-                <p>Python is a powerful programming language especially in the field of machine learning.</p>
+                <p>Python е мощен език за програмиране използван в сферата на Machine Learning. Ние използваме python, за да обучим модел чрез конволюционна невронна мрежа, която разпознава колко е нивото на струпването на тълпата. Кодът е наличен в repository-то на програмата.</p>
             </section>
             <section>
                 <img src="./images/maptiler.png" alt="">
-                <p>Maptiler is a software mapping platform for developers building websites and apps.</p>          
+                <p>Maptiler е софтуер за растерно картографиране за разработчици. Приложението дава растерна карта, която бива използвана от leaflet.js. Maptiler работи на със собствено API, което се свързва с API-то на leaflet.js. </p>          
+            </section>
+        </article>
+        <h1 class="article_heading">За нас</h1>
+        <br>
+        <article id="article2">
+            <section style="flex-grow: 2;">
+                <p>Ние сме отбор Праксидика. Ние открихме един належащ проблем в Бургас и разработихме решение за него. Вярваме, че с нашия проект, ние ще помогнем на града ни като впрегнем силата на изкуствения интелект.</p>
+            </section>
+            <section>
+                <img id="team_photo" src="https://cdn.discordapp.com/attachments/824708669417062461/825041759045943326/unknown.png" alt="Снимка на отбора">
             </section>
         </article>
     </main>
     <footer>
         <p>Developed by Praxidika team: eccy, joan, smensmen and thefallenking. &copy; Praxidika 2021</p>
-        <p style="margin: 0cm; font-size: 12px;"><em>Code under MIT License</em></p>
+        <p style="padding-bottom: 10px; font-size: 12px;"><em><a style="text-decoration: none; color: hsl(60, 8%, 81%);" href="https://github.com/Zakrok09/Praxidike" target="_blank">Code</a> under MIT License</em></p>
     </footer>
 
     <script src="./scripts/script.js"></script>
