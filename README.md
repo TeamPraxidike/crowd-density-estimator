@@ -1,34 +1,67 @@
 # Praxidike
 
-> This is an AI project made for Burgas Hackaton 2021 by eccy, Joan, smensmen and thefallenking
+> Това е проект за Hackaton Бургас 2021 от eccy, Joan, smensmen and thefallenking
 
-## Instalation
+## Инсталиране
 
-Use pip package manager to install 'tensorflow'
+Изтеглете проекта като .zip или в Git Bash използвайте:
 
+```git
+git clone https://github.com/Zakrok09/Praxidike
 ```
+
+За да използвате модела, ще Ви е нужен Python (използваната в приложението версия е 3.9.2)
+
+Ще Ви е нужно да инсталирате tensorflow. Направете го в среда остановена за работа с python от [pipenv](https://pypi.org/project/pipenv/).
+
+```cmd
 pip install --upgrade tensorflow
 ```
 
-## Usage & Features
+## Езици за програмиране
 
-This project uses AI to estimate the number of people located in public areas.
+> Приложението е написано на: HTML5, CSS3, JavaScript ES6 ECMAScript 2018 (като са използвани и legacy елементи), Python, 
 
-![Graph that shows accuracy](https://cdn.discordapp.com/attachments/824642089475244043/824642873923731506/124.png)
+## Използване и описание на уеб приложението
 
-The website consists of the interactive map and some documentation
+Приложението показва нивото на струпване на хора в отделни локации на града като взима информация и я обработва през обучен модел. Местата са:
 
-![photo of the website](https://cdn.discordapp.com/attachments/824642058656153600/824645786260209704/unknown.png)
+- Паметник "Альоша"
+- Център
+- Хотел България
+- Богориди
+- Морска Гара
+- Морски театър
+- Детски кът (до Флора)
+- Сарафово (градинка)
+- Пристанище Сарафово
 
-It presents the information of the areas. 
+**ВАЖНО**: приложението не ползва актуална информация. На сайта е показана само симулация.
 
-![GIF that shows how a circle updates](https://media.discordapp.net/attachments/778499522108194846/824639671328964698/ezgif-4-2e4bb6bca02f.gif)
+На заглавната страница на приложението се виждат няколко такива зони, които си променят цвета спрямо това какво е нивото на струпването на хора.
 
-*No clicks were made during the recording of the GIF*
+1. Червено - много хора
+2. Жълто - средно натрупване на хора
+3. Зелено - малко хора
 
-## Dependencies
+![photo of the website](./images/readme_site.png)
 
-This project uses [leaflet.js](https://leafletjs.com/), [python](https://www.python.org/), [MapTiler](https://www.maptiler.com/).
-Special
+На фигурата отдолу може да видите как едно такова се обновява: 
 
-### THIS PROJECT IS LICENSED UNDER THE MIT
+![GIF that shows how a circle updates](./images/readme_usage.gif)
+
+## Модел
+
+Моделът е конволюционна невронна мрежа, която изпълнява класификация
+
+## Ползвани сайтове, разработки и структури
+
+За сайта са ползвани [leaflet.js](https://leafletjs.com/), [MapTiler](https://www.maptiler.com/).
+
+За документацията са ползвани [EZGif](https://ezgif.com/), [Lightshot](https://app.prntscr.com/en/index.html).
+
+За позлването на модела са ползвани [CUDA](https://en.wikipedia.org/wiki/CUDA), [python](https://www.python.org/).
+
+### За да разгледате кода отворете файла: [CODE.md](./CODE.md)
+
+### ПРОЕКТЪТ Е ЛИЦЕНЗИРАН ПОД MIT ЛИЦЕНЗ
