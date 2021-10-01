@@ -1,8 +1,6 @@
 # Praxidike
 
-***спечелил първо място на Хакатон 2021, AI for City, Купата на кмета - Бургас***
-
-> Това е проект за Hackaton Бургас 2021 от eccy, Joan, smensmen and thefallenking
+> Това е проект за NASA Space Apps 2021 от eccy, Joan and thefallenking
 
 ## Инсталиране
 
