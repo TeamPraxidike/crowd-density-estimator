@@ -6,7 +6,7 @@
 Изтеглете проекта като .zip или в Git Bash използвайте:
 
 ```git
-git clone https://github.com/TeamPraxidike/Crowd-Density-Estimator
+git clone https://github.com/TeamPraxidike/Crowd-Density-Estimator.git
 ```
 
 За да използвате модела, ще Ви е нужен Python (използваната в приложението версия е 3.9.2)
